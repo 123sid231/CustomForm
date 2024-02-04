@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import CustomForm from './CustomForm/CustomForm';
+import Form from './Form/Form';
+import CustomButton from './SubComponents/Button/CustomButton';
+import { useState } from 'react';
 
 function App() {
+  const [tab, setTab] = useState('Build Form')
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='mainContainer'>
+        <div className='toggleWrapper'>
+          <CustomButton name={'Build Form'} onClick={() => setTab('Build Form')} />
+          <CustomButton name={'Preview'} onClick={() => setTab('Preview')} />
+        </div>
+        {tab === 'Build Form' ?
+          <CustomForm />
+          :
+          < Form />
+        }
+      </div>
     </div>
   );
 }

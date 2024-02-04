@@ -1,0 +1,34 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.formWrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.titleWrapper {
+    margin-bottom: 1rem;
+}
+
+.card {
+    padding: 1rem;
+}
+
+.btnWrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin: 1rem 0;
+    align-items: center;
+}
+
+.optionWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

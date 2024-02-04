@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.formWrapper {
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+
+.btnWrapper {
+    margin: 1rem;
+    text-align: right;
+}
