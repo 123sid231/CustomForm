@@ -83,6 +83,7 @@ export default function CustomForm() {
         let flag = validateForm()
         if (flag) {
             dispatch(storeForm(formFields))
+            alert("Form saved successfully")
         }
     }
 

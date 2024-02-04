@@ -41,6 +41,12 @@
   margin: 1rem;
 }
 
+@media(max-width:768px) {
+  .mainContainer {
+    width: 90%;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
